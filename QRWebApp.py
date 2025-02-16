@@ -15,7 +15,8 @@ def getImage(URLString):
     return img_bytes.getvalue()
 st.set_page_config(page_title="QR Generator",page_icon="Icon.ico")
 st.title("Super cool QR code generator")
-st.code("Free QR code maker does not expire by Aditya Ranjan")
+st.markdown("By Aditya Ranjan")
+st.code("Free QR code maker that does not expire.")
 URL = st.text_input("Add your URL", placeholder = "Add it here(ofcourse)")
 if st.button("Make QR", type="primary"):
     img = getImage(URL)
