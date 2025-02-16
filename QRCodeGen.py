@@ -1,4 +1,5 @@
 from pyqrcode import QRCode
+import png
 def makeQR(URL):
     qr = QRCode.create(URL)
     return qr
