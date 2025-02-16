@@ -1,3 +1,2 @@
 pyqrcode
 pypng
-png
