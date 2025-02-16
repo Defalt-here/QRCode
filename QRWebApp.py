@@ -3,7 +3,7 @@ import pyqrcode
 from pyqrcode import QRCode
 import streamlit as st
 def makeQR(URL):
-    qr = QRCode.create(URL)
+    qr = pyqrcode.create(URL)
     return qr
 def getImage(URLString):
     img = makeQR(URLString).png('newQR.png',scale = 8)
