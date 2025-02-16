@@ -1,3 +1,4 @@
+import pyqrcode
 from pyqrcode import QRCode
 import png
 def makeQR(URL):
